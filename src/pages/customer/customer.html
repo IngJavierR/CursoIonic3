@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{customer.name}}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goHome()">
+        <ion-icon name="gome"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-tabs>
+  <ion-tab tabTitle="Information" [root]="customerInformationTab" [rootParams]="customer" tabIcon="alert"></ion-tab>
+  <ion-tab tabTitle="Sales" [root]="customerSalesTab" [rootParams]="customer" tabIcon="cash"></ion-tab>
+</ion-tabs>

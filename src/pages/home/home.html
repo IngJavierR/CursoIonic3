@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle ion-button>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="goToAbout()">Go to About</button>
+
+  <button ion-button (click)="test()" full>Test</button>
+
+  <ion-card *ngIf="imgSrc">
+      <ion-card-header>
+        Picture
+      </ion-card-header>
+      <ion-card-content>
+        <img [src]="imgSrc"/>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>

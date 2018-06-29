@@ -1,0 +1,17 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>My Awesome App</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-list-header>Navigate</ion-list-header>
+            <button menuClose ion-item (click)="goHome()">Home</button>
+            <button menuClose ion-item (click)="goAbout()">About</button>
+            <button menuClose ion-item (click)="goCustomer()">Customer</button>
+        </ion-list>
+    </ion-content>    
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>
